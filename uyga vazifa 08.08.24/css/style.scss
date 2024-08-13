@@ -1,0 +1,292 @@
+$green:rgb(0, 128, 0);
+$black:rgb(0, 0, 0);
+$white:rgb(255, 255, 255);
+$cart:rgb(244, 243, 240);
+$red:rgb(255, 0, 0);
+$brown:rgb(178, 77, 0);
+body{
+     margin: 0;
+}
+button{
+     background-color: $green;
+     color: $white;
+     padding: 5px 15px 5px;
+     border: 0;
+     border-radius: 5px;
+     div{color: $black;}
+}
+header{
+     width: 80%;
+     margin: 20px auto;
+     display: flex;
+     justify-content: space-between;
+     color: $black;
+     .header--name{
+          font-size: x-large;
+          color: $green;
+          font-family:cursive;
+     }
+     span{
+          padding:20px 5px;
+     }
+     button{
+          padding: 5px;
+          &::before{
+               content: url(../icons/cart-shopping-solid.svg);
+          }
+          div{
+               background-color: $white;
+               border-radius: 50%;
+               width: 10px;
+               height: 10px;
+               padding: 4px;
+               display: inline;
+          }
+     }
+}
+.firstSection{
+     padding-top: 100px;
+     position: relative;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     .firstSection--left{
+          margin: 0 auto;
+          width: 55%;
+          padding-top: 100px;
+          justify-items: center;
+          height: min-content;
+          span{
+               font-size: xx-large;
+               color: $green;
+               font-family:cursive;
+          }
+     }
+
+          .left--bottom{
+               position: absolute;
+               left: 0;
+               bottom: 0;
+          }
+          .right--top{
+               position: absolute;
+               right: 0;
+               top: 0;
+          }
+}
+.secondSection{
+     padding: 90px 0 100px;
+     position: relative;
+     .head{
+          text-align: center;
+          width: 42%;
+          margin: 0 auto;
+          img{
+               height: 30px;
+          }
+          span{
+               display: block;
+               color: $green;
+               font-size: x-large;
+          }
+     }
+     .secondSection--items{
+          width: 80%;
+          margin: 0 auto;
+          height: max-content;
+          display: flex;
+          flex-wrap: wrap;
+          .secondSection--items__item{
+               position: relative;
+               border-radius: 5%;
+               width: 25%;
+               height: auto;
+               margin: 10px;
+               background-color:$cart;
+               padding: 20px;
+               img{
+                    width: 100px;
+                    display: block;
+               }
+               .color{
+                    font-size:x-large;
+                    color: $green;
+               }
+               .then{
+                    position: absolute;
+                    bottom: 5px;
+                    left: 10px;
+                    font-size: larger;
+                    color: $green;
+                    &::after{
+                         content: "➡️";
+                    }
+               }
+          }
+          .colore{
+               position: absolute;
+               bottom: 0;
+               left: 0;
+          }
+     }
+}
+.lastSection{
+     position: relative;
+     padding-top:70px;
+     height: 100vh;
+     background-color: $cart;
+     .head{
+          width: 500px;
+          margin: 0 auto;
+          text-align: center;
+          align-items: center;
+          justify-content: center;
+          span{
+               color: $red;
+               font-size: x-large;
+               display: block;
+          }
+
+     }
+     .lastSection--items{  
+          width: 80%;
+          margin: 0 auto;        
+          height: 300px;
+          display: grid;
+          display: flex;
+          grid-template-columns: 3/1fr;
+          .lastSection--items__item{
+               border-radius: 25px 25px ;
+               width: 30%;
+               height: auto;
+               margin: 10px;
+               background-color: $white;
+          .lastImage1, .style{
+               width: 100%;
+               height: 20vh;
+               border-radius: 10px 10px 0px 0px;
+               background-image: url(../icons/1.svg);
+               background-position: center;
+               background-repeat: no-repeat;
+          }
+          .lastImage2{
+               background-image: url(../icons/2.svg);
+
+          }
+          .lastImage3{
+               background-image: url(../icons/3.svg);
+          }
+          span, p{
+               padding: 10px 5px 10px;
+          }
+          }
+     }
+     .lastColor{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+     }
+     .center{
+          width: 100%;
+          text-align: center;
+     }
+     margin-bottom:100px ;
+}
+.together{
+     display: flex;
+     justify-content: space-around;
+     text-align: left;
+     align-items: center;
+     height: 20vh;
+     width: 50%;
+     background-color: $cart;
+     margin: 0 auto;
+     margin-bottom:100px ;
+     border-radius: 25px;
+     .short{
+          width: 200px;
+     }
+}
+footer{
+     position: relative;
+     li{
+          list-style: none;
+          color: $white;
+     }
+     background-color: $black;
+     padding: 30px 0px ;
+     .name{
+          font-size: xx-large;
+          color: $white;
+          font-family:cursive;
+     }
+     .div{text-align: center;}
+     span{
+          text-decoration:hidden;
+          color: $white;
+     }
+     .brown{
+          color: $brown;
+          text-transform: uppercase;
+          letter-spacing: 6px;
+     }
+     .short{
+          height: 400px;
+          width: 400px;
+     }
+     .width{
+          width: 20%;
+     }
+     .inColumn{
+          .submit{
+               position: absolute;
+               top: 150px;
+               right: 90px;
+               display: flex;
+               height: 5%;
+               width: 400px;
+               border-radius: 5px;
+               padding: 10px;
+               background-color: $white;
+               input{
+                    border: none;
+               }
+          }
+          display: flex;
+     }
+     .lastFooter{
+          margin-top: 100px;
+          color: $white;
+          display: flex;
+          justify-content: space-around;
+          .last--right{
+               font-size: 30px;
+          }
+     }
+}
+
+@media (max-width:500px) {
+     .header--right{
+          display: none;
+     }
+     .firstSection{
+          grid-template-columns: 1fr;
+     }
+     footer {
+          .width{
+               width: 50%;
+          }
+          .inColumn{
+               display: block;
+          }
+     }
+     .lastSection--items{
+          display: block;
+          .lastSection--items__item{
+               width: 100%;
+
+     }
+}
+.secondSection--items__item{
+     width: 100%;
+}
+}
